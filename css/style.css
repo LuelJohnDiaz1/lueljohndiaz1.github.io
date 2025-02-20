@@ -7,15 +7,10 @@
     list-style: none;
 }
 
-/* :root {
-    --bg-color: rgb(255 255 255);
-    --bg-color2: #F0F0F0;
-    --text-color: #333;
-    --main-color: #0E6CC2;
-    --accent-color: #ff4576;
-    --gradient-color: linear-gradient(to right, var(--accent-color), var(--main-color));
-    --hover-color: #CCCCCC;
-} */
+:root {
+    --white-text: #EEEEEE;
+}
+
 
 .light {
     --bg-color: rgb(255 255 255);
@@ -30,7 +25,7 @@
 .dark {
     --bg-color: #222831;
     --bg-color2: #333;
-    --text-color: #EEEEEE;
+    --text-color: var(--white-text);
     --main-color: #0E6CC2;
     --accent-color: #ff4576;
     --gradient-color: linear-gradient(to right, var(--accent-color), var(--main-color));
@@ -326,7 +321,7 @@ header {
 }
 
 .resume {
-    color: var(--text-color);
+    color: var(--white-text);
     padding: 10px;
     border-radius: 1.5rem;
     background: var(--main-color);
@@ -657,6 +652,7 @@ header {
     border-radius: 10px;
     background: var(--accent-color);
     font-size: small;
+    color: var(--white-text);
 }
 
 swiper-container {
